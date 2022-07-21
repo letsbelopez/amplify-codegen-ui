@@ -19,9 +19,7 @@
     "build:watch": "npm run build -- --watch"
   },
   "dependencies": {
-    "yup": "^0.32.11"
-  },
-  "peerDependencies": {
+    "yup": "^0.32.11",
     "@aws-amplify/datastore": "^3.7.8"
   },
   "jest": {
@@ -49,6 +47,10 @@
     "moduleFileExtensions": [
       "ts",
       "js"
-    ]
+    ],
+    "overrides": {
+      "hermes-engine": ">=0.10.0",
+      "shell-quote": ">=1.7.3"
+    }
   }
 }
